@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <br><br><br>
+  <form action="{{ url_for('predict')}}" method="post">
+    <div class="form-group text-left container">
+      <div>
+        <label>Enter session position</label>
+        <input type="text" name="session_position" placeholder="1 - 20" required="required" />
+      </div>
+      <div>
+        <br />
+        <label>context_switch</label>
+        <select name="context_switch" id="context_switch">
+          <option value="1">True</option>
+          <option value="0">False</option>
+
+        </select>
+        <br>
+        </br>
+      </div>
+      <div>
+        <br />
+        <label>no_pause_before_play</label>
+        <select name="no_pause_before_play" id="no_pause_before_play">
+          <option value="1">True</option>
+          <option value="0">False</option>
+
+        </select>
+        <br>
+        </br>
+      </div>
+      <div>
+        <label>Enter hist_user_behavior_n_seekfwd</label>
+        <input type="text" name="hist_user_behavior_n_seekfwd" placeholder="0-30" required="required" />
+      </div>
+      <div>
+        <label>Enter hist_user_behavior_n_seekback</label>
+        <input type="text" name="hist_user_behavior_n_seekback" placeholder="0-30" required="required" />
+      </div>
+      <div>
+        <br />
+        <label>hist_user_behavior_is_shuffle</label>
+        <select name="hist_user_behavior_is_shuffle" id="hist_user_behavior_is_shuffle">
+          <option value="1">True</option>
+          <option value="0">False</option>
+
+        </select>
+        <br>
+        </br>
+      </div>
+      <div>
+        <label>Enter hour_of_day</label>
+        <input type="text" name="hour_of_day" placeholder="1-24" required="required" />
+      </div>
+      <div>
+        <br />
+        <label>context_type</label>
+        <select name="context_type" id="context_type">
+          <option value="1">editorial_playlist</option>
+          <option value="2">user_collection</option>
+          <option value="3">radio</option>
+          <option value="4">personalized_playlist</option>
+          <option value="5">Catalog</option>
+          <option value="6">charts</option>
+
+        </select>
+        <br>
+        </br>
+      </div>
+      <div>
+        <br />
+        <label>hist_user_behavior_reason_start</label>
+        <select name="hist_user_behavior_reason_start" id="hist_user_behavior_reason_start">
+          <option value="1">trackdoone</option>
+          <option value="2">forward_button</option>
+          <option value="3">back_button</option>
+          <option value="4">clickrow</option>
+          <option value="5">appload</option>
+          <option value="6">playbutton</option>
+          <option value="7">remote</option>
+          <option value="8">track_error</option>
+          <option value="9">endplay</option>
+
+        </select>
+        <br>
+        </br>
+      </div>
+
+      <div>
+        <br />
+        <label>hist_user_behavior_reason_end</label>
+        <select name="hist_user_behavior_reason_end" id="hist_user_behavior_reason_end">
+          <option value="1">trackdoone</option>
+          <option value="2">forward_button</option>
+          <option value="3">back_button</option>
+          <option value="4">endplay</option>
+          <option value="5">logout</option>
+          <option value="6">remote</option>
+          <option value="7">click_row</option>
+
+        </select>
+        <br>
+        </br>
+      </div>
+
+      <div>
+        <label>Enter track name</label>
+        <input type="text" name="track" placeholder="Track_name" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+      </div>
+    </div>
+  </form>
+  <br><br>
+  </div>
+  <div class="container text-center">{{ prediction_text }}</div>
+<br>
+<br><br><br><br><br><br><br>
+</body>
+
+</html>
