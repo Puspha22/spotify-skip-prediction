@@ -1,2 +1,6 @@
-# spotify-skip-prediction
-This project predicts if user will skip the song or not.
+Author: Puspha Raj Pandeya
+puspharajpandey@gmail.com
+
+Using NLP Techniques to Predict Song Skips on Spotify based on Acoustic Data
+
+
