@@ -33,7 +33,7 @@ The objective of the challenge is limited to predicting just the skip_2 behaviou
 For this project, we followed a simple methodology used in most of the machine learning projects. All the steps that we followed are discussed below:
 
 ## Data Gathering
-The dataset provided by Spotify consists of two parts, session logs and tracks. The dataset provided by Spotify has around 130 million listening sessions. Due to the lack of good hardware, we choose to use a sample of the dataset. The session logs contain 10000 listening sessions. Each of these listening sessions is described by 21 features, such as:<br>
+The dataset provided by Spotify consists of two parts, session logs and tracks. The dataset provided by Spotify has around 130 million listening sessions. Due to the lack of good hardware, we choose to use a sample of the dataset. The session logs contain 10000 listening sessions. Each of these listening sessions is described by 21 features, such as:<br><br>
 unique session ID<br>
 the sequence of tracks played during the session<br>
 the date and hour the session was played, etc.<br>
