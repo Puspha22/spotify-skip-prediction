@@ -36,7 +36,7 @@ For this project, we followed a simple methodology used in most of the machine l
 The dataset provided by Spotify consists of two parts, session logs and tracks. The dataset provided by Spotify has around 130 million listening sessions. Due to the lack of good hardware, we choose to use a sample of the dataset. The session logs contain 10000 listening sessions. Each of these listening sessions is described by 21 features, such as:
 1. unique session ID
 2. the sequence of tracks played during the session
-3. the date and hour the session was played, etc.
+3. the date and hour the session was played, etc.<br>
 The tracks dataset contains 50704 unique tracks users listened to during their listening sessions. Each of these tracks is described by 29 features, such as:
 1. unique track ID
 2. track duration
