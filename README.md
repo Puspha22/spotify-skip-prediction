@@ -37,7 +37,7 @@ The dataset provided by Spotify consists of two parts, session logs and tracks. 
 unique session ID<br>
 the sequence of tracks played during the session<br>
 the date and hour the session was played, etc.<br>
-The tracks dataset contains 50704 unique tracks users listened to during their listening sessions. Each of these tracks is described by 29 features, such as:<br>
+<br>The tracks dataset contains 50704 unique tracks users listened to during their listening sessions. Each of these tracks is described by 29 features, such as:<br><br>
 unique track ID<br>
 track duration<br>
 track popularity rating<br>
