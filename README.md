@@ -14,7 +14,7 @@ Date: 2021-11-15<br>
 # Abstract
 Recommender systems play an essential role in music streaming services, prominently in the form of personalized playlists. Exploring the user interactions within these listening sessions can be beneficial to understanding the user preferences in the context of a single session. Spotify constantly seeks to improve its user experience. Using Machine Learning we can build a model that could predict if the user will skip the song or not. By predicting whether users will skip certain songs, Spotify can better understand its user’s needs and based on these insights improve its music recommendation system. The models used for this project are logistic regression and gradient boosted trees. The results were obtained by training these models on a large dataset that consists of about 10000 listening sessions. The accuracy of our models was around 87%. Our code is released at https://github.com/Puspha22/spotify-skip-prediction.
 
-# Keywords: Machine Learning, Logistic Regression, Gradient Boosted Trees, Skip Prediction
+<br>Keywords: Machine Learning, Logistic Regression, Gradient Boosted Trees, Skip Prediction
 
 
 
